@@ -10,37 +10,57 @@
 
 </head>
 <body>
-    <div class=" container-fluid p-5 text-white text-center"  id="contact-section">
-        <h2>Contact Me</h2>
-        <div class="row mt-3 d-flex justify-content-center">
-            <div class="col-12 col-md-8 col-lg-4" id="form-col">
-                <!-- Contact Form Section Start -->
-                <form class="bg-success p-1 rounded">
-                    <div class="form-group">
-                        <label class="text-light" for="name">Name</label>
-                        <input type="text" class="form-control" id="name">
-                    </div>
-                    <div class="form-group">
-                        <label class="text-light" for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" >
-                    </div>
-                    <div class="form-group">
-                        <label class="text-light" for="contact">Contact Number</label>
-                        <input type="number" class="form-control" id="contact"">
-                    </div>
-                    <div class="form-group">
-                        <label class="text-light" for="concern">Concern</label>
-                        <select class="form-control" id="concern">
-                            <option>Appointment</option>
-                            <option>Follow-Up</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="text-light" for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="7"></textarea>
-                    </div>
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalDiv"><a href="newfile.html">Send Email</a></button>
-                </form>
+   <div class=" container-fluid p-1 text-white text-center"  id="contact-section">
+    <h2>Contact Me</h2>
+    <div class="row mt-3 d-flex justify-content-center">
+        <div class="col-12 col-md-8 col-lg-4" id="form-col">
+            <!-- Contact Form Section Start -->
+            <form class="bg-success p-1 rounded">
+                <div class="form-group">
+                    <label class="text-light" for="name">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label class="text-light" for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" >
+                </div>
+                <div class="form-group">
+                    <label class="text-light" for="contact">Contact Number</label>
+                    <input type="number" class="form-control" id="contact"">
+                </div>
+                <div class="form-group">
+                    <label class="text-light" for="concern">Concern</label>
+                    <select class="form-control" id="concern">
+                        <option>Appointment</option>
+                        <option>Follow-Up</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="text-light" for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="7"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Submit
+              </button>
+          </form>
+          <!-- Contact Form End -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contacts</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 Done
+             </div>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
             <!-- Contact Form End -->
             <button><a href="index.html"> Back</a></button>
 
